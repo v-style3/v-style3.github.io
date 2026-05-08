@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>V STYLE j. d. o. o. — Sustavi upravljanja i BI za studije i salone</title>
+  <style>
+    :root{
+      --bg:#fff6f7;
+      --primary:#e0315b;
+      --accent:#ff6f91;
+      --muted:#6b6b6b;
+      --card:#fff;
+      --glass: rgba(255,255,255,0.6);
+      font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background: linear-gradient(180deg,#fff1f3 0%, var(--bg) 100%);color:#111;line-height:1.45}
+    header{
+      background: linear-gradient(135deg, rgba(224,49,91,0.95), rgba(255,111,145,0.9));
+      color:#fff;padding:48px 16px;text-align:left;clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px;}
+    h1{margin:8px 0 6px;font-size:28px;letter-spacing:0.4px}
+    p.lead{opacity:0.95;margin:0 0 18px;color:#fffde7;max-width:780px}
+    nav.topnav{display:flex;gap:18px;margin-top:18px;flex-wrap:wrap}
+    nav.topnav a{color:rgba(255,255,255,0.92);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+    nav.topnav a:hover{background:rgba(255,255,255,0.08)}
+    main{margin-top:-40px}
+    section{padding:40px 0;border-bottom:1px solid rgba(0,0,0,0.04)}
+    .card{background:var(--card);border-radius:14px;padding:22px;box-shadow: 0 8px 30px rgba(16,24,40,0.06);}
+    .grid{display:grid;gap:18px}
+    .center{text-align:center}
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--primary);color:#fff;text-decoration:none;font-weight:700;box-shadow: 0 8px 24px rgba(224,49,91,0.18)}
+    .btn.alt{background:transparent;border:2px solid rgba(224,49,91,0.12);color:var(--primary);font-weight:700}
+    /* Services: image above text */
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .svc{background:linear-gradient(180deg,#fff,#fff);padding:14px;border-radius:12px;text-align:center}
+    .svc img{width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:12px}
+    /* Vertical lists for prednosti and tehnologije */
+    .vertical-list{display:flex;flex-direction:column;gap:16px}
+    .adv-item{display:flex;gap:12px;align-items:flex-start;background:var(--glass);padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.35)}
+    .adv-icon{width:44px;height:44px;flex-shrink:0;border-radius:8px;background:linear-gradient(180deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;color:#fff}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{padding:18px;border-radius:12px;background:var(--glass);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.35)}
+    details summary{cursor:pointer;padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fff8);outline:none}
+    form{display:grid;gap:12px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    input,textarea,select{padding:12px;border-radius:10px;border:1px solid #e8e8e8;font-size:15px}
+    input:invalid,textarea:invalid{border-color:#e0315b}
+    .note{font-size:13px;color:var(--muted)}
+    footer{padding:28px 0;color:var(--muted)}
+    .images{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    img.responsive{width:100%;height:180px;object-fit:cover;border-radius:10px}
+    @media (max-width:900px){
+      .steps{grid-template-columns:repeat(2,1fr)}
+      .services-grid{grid-template-columns:1fr}
+      .images{grid-template-columns:repeat(2,1fr)}
+      .form-row{grid-template-columns:1fr}
+    }
+    @media (max-width:600px){
+      nav.topnav{display:none}
+      header{padding:36px 12px}
+      .steps{grid-template-columns:1fr}
+    }
+    .footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:15px;opacity:.95;font-weight:700">V STYLE j. d. o. o.</div>
+        <h1>Napredni sustavi upravljanja, integracije i BI za studije i salone</h1>
+        <p class="lead">Dizajniramo i implementiramo skalabilna upravljačka rješenja, real-time integracije i naprednu analitiku kako bi vaše poslovanje u studiju ili salonu radilo učinkovitije i donosilo bolje odluke zasnovane na podacima.</p>
+        <div style="margin-top:6px">
+          <a class="btn" href="#kontakt">Zatražite konzultaciju</a>
+          <a class="btn alt" href="#usluge" style="margin-left:12px">Naše usluge</a>
+        </div>
+      </div>
+
+      <nav class="topnav" style="margin-top:22px">
+        <a href="#usluge">Usluge</a>
+        <a href="#prednosti">Prednosti</a>
+        <a href="#proces">Proces</a>
+        <a href="#tehnologije">Tehnologije</a>
+        <a href="#o-nama">O nama</a>
+        <a href="#prioriteti">Prioriteti</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- USLUGE -->
+    <section id="usluge">
+      <div class="card">
+        <h2>Naše usluge</h2>
+        <p class="muted">Cjeloviti tehnički i analitički paket za studije i salone.</p>
+        <div class="services-grid" style="margin-top:16px">
+          <div class="svc">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3f9a5e5e5f9b6b2b" alt="Sustavi upravljanja">
+            <h3>Sustavi upravljanja</h3>
+            <p class="muted">ERP/CRM rješenja prilagođena procesima salona: rezervacije, upravljanje zalihama, naplata i izvještavanje s naglaskom na sigurnost i audit-trail.</p>
+          </div>
+
+          <div class="svc">
+            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1d5f6b8d5a8c1b2c" alt="Integracije">
+            <h3>Integracije & API</h3>
+            <p class="muted">Real-time i batch integracije s plaćanjem, kalendarima, POS sustavima i alatima za marketing koristeći sigurne API gateway-e i poruke preko pub/sub arhitekture.</p>
+          </div>
+
+          <div class="svc">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b3d4f5a6c8d7e1f" alt="BI i analitika">
+            <h3>BI i analiza podataka</h3>
+            <p class="muted">Dashboards, automatizirani izvještaji i prediktivni modeli za optimizaciju rasporeda, zaliha i marketinških kampanja — sve vizualizirano i dostupno na mobilnim uređajima.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREDNOSTI (VERTIKALNO + IKONE) -->
+    <section id="prednosti">
+      <div class="card">
+        <h2>Naše prednosti</h2>
+        <div class="vertical-list" style="margin-top:14px">
+          <div class="adv-item">
+            <div class="adv-icon" aria-hidden>
+              <!-- icon: target -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/></svg>
+            </div>
+            <div>
+              <strong>Specijalizacija</strong>
+              <div class="muted">Fokus na studije i salone — rješenja prilagođena industriji, procesima i specifičnim KPI-ima.</div>
+            </div>
+          </div>
+
+          <div class="adv-item">
+            <div class="adv-icon" aria-hidden>
+              <!-- icon: cloud -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 16.58A4 4 0 0 0 16 12H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 16.58A4 4 0 0 1 11 12h1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>Skalabilna arhitektura</strong>
+              <div class="muted">Microservices, cloud-native patterni i CI/CD pipeline za brze i sigurne iteracije.</div>
+            </div>
+          </div>
+
+          <div class="adv-item">
+            <div class="adv-icon" aria-hidden>
+              <!-- icon: shield -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.58 9.74-7 11-3.42-1.26-7-6-7-11V7l7-4z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>Sigurnost</strong>
+              <div class="muted">Enkripcija, RBAC, redoviti sigurnosni auditi i backup strategije za osiguranje podataka klijenata.</div>
+            </div>
+          </div>
+
+          <div class="adv-item">
+            <div class="adv-icon" aria-hidden>
+              <!-- icon: chart -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3v18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 13v5M12 8v10M17 4v14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <strong>Brzi ROI</strong>
+              <div class="muted">Mjerljivi rezultati: smanjenje vremena rezervacije, rast konverzija i optimizacija troškova.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section id="proces">
+      <div class="card">
+        <h2>Naš proces rada</h2>
+        <p class="muted">Transparentni, iterativni i tehnički orijentirani tijek od ideje do produkcije.</p>
+        <div class="steps" style="margin-top:18px">
+          <div class="step"><div class="n">1 — Analiza</div><div class="muted">Tehnički i poslovni audit, mapiranje procesa i KPI-a.</div></div>
+          <div class="step"><div class="n">2 — Dizajn</div><div class="muted">Arhitektura rješenja, API specifikacije, izbor tehnologija i sigurnosnih kontrola.</div></div>
+          <div class="step"><div class="n">3 — Implementacija</div><div class="muted">Agilne iteracije, testovi (unit, integration), CI/CD i dokumentacija.</div></div>
+          <div class="step"><div class="n">4 — Uvođenje & podrška</div><div class="muted">Obuka, monitoring u produkciji, SLA i kontinuirano poboljšanje.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEHNOLOGIJE (VERTIKALNO STRETCHED) -->
+    <section id="tehnologije">
+      <div class="card">
+        <h2>Tehnologije i arhitektura</h2>
+        <div class="vertical-list" style="margin-top:12px">
+          <div style="padding:12px;border-radius:10px;background:#fff;">
+            <h4>Backend</h4>
+            <p class="muted">Node.js, Python, .NET — mikroservisi, čista separacija domena i skalabilni API gateway.</p>
+          </div>
+
+          <div style="padding:12px;border-radius:10px;background:#fff;">
+            <h4>Integracije</h4>
+            <p class="muted">REST/GraphQL, Webhooks, message brokers (Kafka, RabbitMQ) za pouzdanu sinhronizaciju podataka i real-time notifikacije.</p>
+          </div>
+
+          <div style="padding:12px;border-radius:10px;background:#fff;">
+            <h4>Analitika</h4>
+            <p class="muted">Data lake, ETL/ELT pipeline-i, Power BI / Metabase i prilagođeni dashboards s automatiziranim izvještajima.</p>
+          </div>
+
+          <div style="padding:12px;border-radius:10px;background:#fff;">
+            <h4>Cloud & DevOps</h4>
+            <p class="muted">AWS/GCP, Docker, Kubernetes, Terraform, CI/CD i monitoring (Prometheus/Grafana) za stabilnu produkciju.</p>
+          </div>
+
+          <div style="padding:12px;border-radius:10px;background:#fff;">
+            <h4>Sigurnost</h4>
+            <p class="muted">OAuth2 / OpenID Connect, TLS enkripcija, enkripcija na razini baze i redoviti sigurnosni pregledi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA (перемещённое) -->
+    <section id="cta">
+      <div class="card center">
+        <h2>Spremni za modernizaciju vašeg salona ili studija?</h2>
+        <p class="muted">Dogovorite besplatnu tehničku konzultaciju i proof-of-concept plan.</p>
+        <a class="btn" href="#kontakt">Kontaktirajte nas</a>
+      </div>
+    </section>
+
+    <!-- PRIORITETI -->
+    <section id="prioriteti">
+      <div class="card">
+        <h2>Naši prioriteti</h2>
+        <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px">
+          <div style="flex:1;min-width:220px">
+            <h4>Performanse</h4>
+            <p class="muted">Optimizirani procesi i smanjeno vrijeme odziva sustava tijekom peak opterećenja.</p>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <h4>Pouzdanost</h4>
+            <p class="muted">Redundantne komponente, monitoring i automatsko oporavak — minimalan downtime.</p>
+          </div>
+          <div style="flex:1;min-width:220px">
+            <h4>Privatnost podataka</h4>
+            <p class="muted">Puna sukladnost s lokalnim propisima i industrijskim standardima zaštite podataka.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O NAMA -->
+    <section id="o-nama">
+      <div class="card">
+        <h2>O nama</h2>
+        <p class="muted">V STYLE j. d. o. o. je tehnološki partner posvećen digitalnoj transformaciji malih i srednjih studija i salona u Hrvatskoj. Naša misija je omogućiti vlasnicima da donose odluke temeljene na podacima, automatiziraju ponavljajuće zadatke i povećaju zadovoljstvo klijenata kroz pouzdane sustave.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="card">
+        <h2>FAQ — Često postavljena pitanja</h2>
+        <div style="margin-top:12px">
+          <div class="faq-item"><details><summary><strong>Koliko traje uvođenje sustava?</strong></summary><div class="muted" style="padding:12px">Ovisi o opsegu; prosječno 6–12 tjedana za osnovnu implementaciju s integracijama.</div></details></div>
+
+          <div class="faq-item"><details><summary><strong>Podržavate li migraciju postojećih podataka?</strong></summary><div class="muted" style="padding:12px">Da — radimo ETL procese, validaciju i testne migracije prije produkcije.</div></details></div>
+
+          <div class="faq-item"><details><summary><strong>Imate li opcije za prilagođeno izvještavanje?</strong></summary><div class="muted" style="padding:12px">Da — kreiramo dashboards s KPI-ima relevantnim za salon/ studio i omogućujemo automatizirane izvještaje.</div></details></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT (структурно красиво) -->
+    <section id="kontakt">
+      <div class="card">
+        <h2>Kontakt</h2>
+        <p class="muted">Pošaljite upit ili zatražite konzultaciju — odgovorimo u najkraćem roku.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px">
+          <div>
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <label>
+                  Ime i prezime *
+                  <input type="text" id="name" name="name" placeholder="Vaše ime i prezime" required minlength="2" />
+                </label>
+                <label>
+                  Email *
+                  <input type="email" id="email" name="email" placeholder="primjer@domena.com" required />
+                </label>
+              </div>
+
+              <label>
+                Tema upita
+                <select id="topic" name="topic">
+                  <option>Općenito</option>
+                  <option>Implementacija sustava</option>
+                  <option>Integracije</option>
+                  <option>BI i analitika</option>
+                  <option>Drugo</option>
+                </select>
+              </label>
+
+              <label>
+                Poruka *
+                <textarea id="message" name="message" rows="6" placeholder="Kratak opis vašeg zahtjeva" required minlength="10"></textarea>
+              </label>
+
+              <div class="note">Ne tražimo broj telefona. Polja označena * su obavezna.</div>
+
+              <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+                <button class="btn" type="submit">Pošalji poruku</button>
+                <div id="formFeedback" style="color:var(--muted)"></div>
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <div class="card" style="padding:16px">
+              <h4>Adresa</h4>
+              <p class="muted">Danijela Godine 6, 51000 Rijeka, Primorsko-goranska županija, Croatia</p>
+              <h4>Email</h4>
+              <p class="muted">team@v-style.org</p>
+              <h4 style="margin-top:12px">Radno vrijeme</h4>
+              <p class="muted">Pon — Pet: 09:00 — 17:00</p>
+              <div style="margin-top:18px">
+                <a class="btn" href="#kontakt">Zatražite konzultaciju</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="card" style="padding:18px">
+          <div class="footer-row">
+            <div>
+              <strong>V STYLE j. d. o. o.</strong><div class="muted">Sustavi upravljanja • Integracije • BI i analitika</div>
+            </div>
+            <div class="muted">© 2026 V STYLE j. d. o. o. Sva prava pridržana</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Simple client-side validation & UX for contact form
+    const form = document.getElementById('contactForm');
+    const feedback = document.getElementById('formFeedback');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      feedback.style.color = 'var(--muted)';
+
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+
+      if(!name.checkValidity()){
+        feedback.style.color = '#e0315b';
+        feedback.textContent = 'Unesite valjano ime (najmanje 2 znaka).';
+        name.focus(); return;
+      }
+      if(!email.checkValidity()){
+        feedback.style.color = '#e0315b';
+        feedback.textContent = 'Unesite ispravnu email adresu.';
+        email.focus(); return;
+      }
+      if(!message.checkValidity()){
+        feedback.style.color = '#e0315b';
+        feedback.textContent = 'Poruka je prekratka (najmanje 10 znakova).';
+        message.focus(); return;
+      }
+
+      feedback.style.color = 'green';
+      feedback.textContent = 'Hvala — vaša poruka je zaprimljena. Odgovorit ćemo uskoro.';
+      form.reset();
+      feedback.setAttribute('tabindex','-1');
+      feedback.focus();
+    });
+  </script>
+</body>
+</html>
